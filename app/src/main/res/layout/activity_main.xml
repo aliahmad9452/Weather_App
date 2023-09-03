@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/webg"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPressure"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWind"
+        android:layout_marginTop="8dp"
+        android:text="Location: "
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="163dp"
+android:layout_gravity="center"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+
+    <TextView
+        android:id="@+id/txtTempC"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="8dp"
+        android:text="Temperature (°C): "
+        android:textSize="16sp" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/txtLastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Last Updated: "
+        android:textSize="16sp" />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/txtWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTempC"
+        android:layout_marginTop="8dp"
+        android:text="Wind: "
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/txtHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPressure"
+        android:layout_marginTop="8dp"
+        android:text="Humidity: "
+        android:textSize="16sp" />
+
+</LinearLayout>
